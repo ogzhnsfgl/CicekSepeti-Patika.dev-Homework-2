@@ -1,0 +1,160 @@
+@import "reset";
+@import "variables";
+@import "component";
+
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap");
+
+body {
+  font-size: 10px;
+  background-color: $bg-color;
+}
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 6rem;
+  border-bottom: 3px solid $border-color;
+  background-color: $bg-color;
+  .container {
+    text-align: center;
+    .nav {
+      line-height: 5rem;
+      color: $title-color;
+      font-size: 2.3rem;
+      font-family: $header-font;
+      font-weight: bold;
+      letter-spacing: 3px;
+      display: flex;
+      justify-content: space-around;
+      align-items: ce;
+
+      &-logo {
+        img {
+          height: 65px;
+        }
+      }
+
+      &-profile {
+        img {
+          height: 65px;
+          border-radius: 100%;
+          border: 3px solid $border-color;
+          filter: grayscale(60%);
+          transition: all 0.5s;
+        }
+
+        &:hover {
+          img {
+            filter: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 4rem;
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    // transition: all 2s ease-in-out;
+    overflow: hidden;
+    border-radius: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    &-image {
+      height: 100%;
+      img {
+        pad: 0.3rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(0.8);
+        transition: all 0.6s;
+      }
+    }
+    &:hover {
+      .card-body {
+        // display: flex;
+        visibility: visible;
+        transform: translate(-0.4rem, -8.5rem);
+        opacity: 1;
+        transition: all 0.6s;
+      }
+      .card-image {
+        img {
+          transform: scale(1.1);
+          filter: grayscale(0);
+        }
+      }
+    }
+    &-body {
+      position: absolute;
+      font-family: $title-font;
+      right: 0px;
+      top: 1 px;
+      width: 110px;
+      height: 110px;
+      opacity: 0.1;
+      background: linear-gradient(
+        to bottom,
+        rgba(43, 41, 41, 0.397),
+        rgba(63, 63, 68, 0.815),
+        rgba(63, 57, 58, 0.377)
+      );
+      color: $main-text-color;
+      transform: translate(0, 0);
+      transition: all 2s;
+      display: flex;
+      visibility: hidden;
+      overflow: hidden;
+      padding: 0.5rem;
+      text-align: center;
+      transform: translate(0, 0);
+      border-radius: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $border-color;
+
+      &-title {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+      }
+      &-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: 4rem;
+  background: $bg-color;
+  border-top: 3px solid $border-color;
+
+  .footer-content {
+    text-align: center;
+    line-height: 3rem;
+
+    p {
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+  }
+}
