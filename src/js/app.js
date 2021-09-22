@@ -1,28 +1,45 @@
-import { animalList } from "./animals.js";
-import "../scss/app.scss";
+import { duckList } from './duck.js';
+import { dogList } from './dog.js';
+import '../scss/app.scss';
 
 /* Required HTML Elements */
-const cardsList = document.querySelector(".cards-list");
-console.log(cardsList);
+const animalList = [...dogList, ...duckList];
+const cardsList = document.querySelector('.cards-list');
 
 animalList.map((item, index) => {
-  console.log(item);
+  const card = document.createElement('div');
+  // TODO: numberOfLegs e göre iki farklı inner HTML kur.
+  const animal = item[`animal${index + 1}`];
 
-  let card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
+  card.className = 'card';
+  if (animal.numberOfLegs === 4) {
+    card.innerHTML = `
               <div class="card-image">
-                <img src=${item[`animal${index + 1}`].image} alt="animal1" />
+                <img src=${animal.image} alt="animal1" />
               </div>
               <div class="card-body">
                 <div class="card-body-title">
-                <p>${item[`animal${index + 1}`].name}</p>
+                <p>${animal.name}</p>
                 </div>
-                <div class="card-body-text">${
-                  item[`animal${index + 1}`].age
-                }</div>
-              </div>
+                <div class="card-body-text">${animal.age}</div>
+                </div>
+                <div class="card-body-paw"><img src="../images/content/dog-paw.png" alt="" /></div>
             `;
+  } else {
+    card.innerHTML = `
+              <div class="card-image">
+                <img src=${animal.image} alt="animal1" />
+              </div>
+              <div class="card-body">
+                <div class="card-body-title">
+                <p>${animal.name}</p>
+                </div>
+                <div class="card-body-text">${animal.age}</div>
+                </div>
+                <div class="card-body-paw"><img src="../images/content/duck-paw.png" alt="" /></div>
+            `;
+  }
 
   cardsList.appendChild(card);
+  return null;
 });
