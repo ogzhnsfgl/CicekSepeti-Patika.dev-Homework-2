@@ -7,7 +7,7 @@
 ## Project Details:
 
 - Created with pure CSS(SCSS) & JS.
-- Fronted-BoilerPlate used from [@ WeAreAthlon ](https://github.com/WeAreAthlon/frontend-webpack-boilerplate)
-- Webpack, Babel, Eslint configured.
+- Used Fronted-BoilerPlate by [@ WeAreAthlon ](https://github.com/WeAreAthlon/frontend-webpack-boilerplate).
+- Webpack, Babel, EsLint configured.
 - Responsive UI.
 - Auto deployment on Vercel.
