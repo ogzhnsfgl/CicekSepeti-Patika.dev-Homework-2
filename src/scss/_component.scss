@@ -1,0 +1,92 @@
+@import 'variables';
+
+/* Single Card Item */
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  &-image {
+    height: 100%;
+    img {
+      pad: 0.3rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(0.8);
+      transition: $general-transition;
+    }
+  }
+  &:hover {
+    .card-body {
+      visibility: visible;
+      transform: translate(-0.4rem, -8.5rem);
+      opacity: 1;
+      transition: $general-transition;
+    }
+    .card-image {
+      img {
+        transform: scale(1.1);
+        filter: grayscale(0);
+      }
+    }
+
+    .card-body-paw {
+      visibility: visible;
+      transform: translate(6.5rem, 0.2rem);
+    }
+  }
+  &-body {
+    position: absolute;
+    font-family: $title-font;
+    right: 0px;
+    width: 110px;
+    height: 110px;
+    opacity: 0.1;
+    background: linear-gradient(
+      to bottom,
+      rgba(43, 41, 41, 0.397),
+      rgba(63, 63, 68, 0.815),
+      rgba(63, 57, 58, 0.377)
+    );
+    color: $main-text-color;
+    transition: $general-transition;
+    display: flex;
+    visibility: hidden;
+    overflow: hidden;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border-color;
+
+    &-title {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+    &-text {
+      font-size: 1.4rem;
+    }
+    &-paw {
+      transition: $general-transition;
+      position: absolute;
+      visibility: hidden;
+      top: 0px;
+      left: -6rem;
+      height: 60px;
+      width: 60px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

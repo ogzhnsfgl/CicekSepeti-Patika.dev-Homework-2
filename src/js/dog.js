@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/prefer-default-export */
 import Animal from './animals';
 
 class Dog extends Animal {
@@ -7,7 +9,7 @@ class Dog extends Animal {
   }
 }
 
-// eslint-disable-next-line import/prefer-default-export
+/* Create a list of ducks */
 export const dogList = [
   { animal1: new Dog('MAX', 13, '../images/content/dog1.jfif') },
   { animal2: new Dog('COOPER', 9, '../images/content/dog2.jfif') },
@@ -17,4 +19,5 @@ export const dogList = [
   { animal6: new Dog('OLLIE', 1, '../images/content/dog6.jfif') },
   { animal7: new Dog('BUDDY', 4, '../images/content/dog7.jfif') },
   { animal8: new Dog('ROCKY', 5, '../images/content/dog8.jfif') },
+  { animal9: new Dog('KACKAR', 5, '../images/content/dog9.jfif') },
 ];

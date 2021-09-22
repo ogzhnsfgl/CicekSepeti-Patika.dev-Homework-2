@@ -1,10 +1,10 @@
+/* Color Palette */
 $title-color: rgb(88, 97, 39);
 $main-text-color: hsla(60, 14%, 54%, 1);
-$tumbleweed: hsla(23, 48%, 72%, 1);
 $bg-color: rgba(241, 220, 167, 0.589);
-$maximum-yellow-red: hsla(39, 100%, 71%, 1);
 $border-color: hsla(24, 54%, 60%, 1);
-$beaver: hsla(25, 20%, 50%, 1);
-
-$title-font: "Luckiest Guy", cursive;
-$header-font: "Grechen Fuemen", cursive;
+/* Fonts */
+$title-font: 'Luckiest Guy', cursive;
+$header-font: 'Grechen Fuemen', cursive;
+/* Transition */
+$general-transition: all 0.8s;
