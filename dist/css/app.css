@@ -1,0 +1,358 @@
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \******************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap);
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss (1) ***!
+  \**********************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap);
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss (2) ***!
+  \**********************************************************************************************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: bolder;
+}
+
+/* Color Palette */
+/* Fonts */
+/* Transition */
+/* Color Palette */
+/* Fonts */
+/* Transition */
+/* Single Card Item */
+.card {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 1.8rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card-image {
+  height: 100%;
+}
+.card-image img {
+  pad: 0.3rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(0.8);
+          filter: grayscale(0.8);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.card:hover .card-body {
+  visibility: visible;
+  -webkit-transform: translate(-0.4rem, -8.5rem);
+          transform: translate(-0.4rem, -8.5rem);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.card:hover .card-image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.card:hover .card-body-paw {
+  visibility: visible;
+  -webkit-transform: translate(6.5rem, 0.2rem);
+          transform: translate(6.5rem, 0.2rem);
+}
+.card-body {
+  position: absolute;
+  font-family: "Luckiest Guy", cursive;
+  right: 0px;
+  width: 110px;
+  height: 110px;
+  opacity: 0.1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 41, 41, 0.397)), color-stop(rgba(63, 63, 68, 0.815)), to(rgba(63, 57, 58, 0.377)));
+  background: linear-gradient(to bottom, rgba(43, 41, 41, 0.397), rgba(63, 63, 68, 0.815), rgba(63, 57, 58, 0.377));
+  color: #9a9a79;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  overflow: hidden;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #d08e62;
+}
+.card-body-title {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.card-body-text {
+  font-size: 1.4rem;
+}
+.card-body-paw {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  left: -6rem;
+  height: 60px;
+  width: 60px;
+}
+.card-body-paw img {
+  height: 100%;
+}
+
+/* General Setting for whole project */
+body {
+  font-size: 10px;
+  background-color: rgba(241, 220, 167, 0.589);
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+/* Header / Nav Section */
+.header-wrapper {
+  width: 100%;
+  height: 6rem;
+  border-bottom: 3px solid #d08e62;
+  background-color: rgba(241, 220, 167, 0.589);
+}
+.header-wrapper .container {
+  text-align: center;
+}
+.header-wrapper .container .nav {
+  color: #586127;
+  font-size: 2.1rem;
+  font-family: "Grechen Fuemen", cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+@media (max-width: 900px) {
+  .header-wrapper .container .nav {
+    font-size: 1.5rem;
+  }
+  .header-wrapper .container .nav-title {
+    display: none;
+  }
+}
+.header-wrapper .container .nav-title p {
+  line-height: 4rem;
+}
+.header-wrapper .container .nav-logo img {
+  height: 65px;
+}
+.header-wrapper .container .nav-profile img {
+  height: 65px;
+  border-radius: 100%;
+  border: 3px solid #d08e62;
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.header-wrapper .container .nav-profile:hover img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* Card List Section */
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 4rem;
+  /* Minimize padding for better look on small screen */
+}
+@media (max-width: 900px) {
+  .cards-list {
+    padding: 2rem;
+  }
+}
+
+/* Footer Section */
+.footer-wrapper {
+  width: 100%;
+  height: 4rem;
+  background: rgba(241, 220, 167, 0.589);
+  border-top: 3px solid #d08e62;
+}
+.footer-wrapper .footer-content {
+  text-align: center;
+  line-height: 3rem;
+}
+.footer-wrapper .footer-content p {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
