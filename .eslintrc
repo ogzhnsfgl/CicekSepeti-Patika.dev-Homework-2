@@ -24,7 +24,8 @@
     "no-param-reassign":0,
     "array-callback-return":0,
     "implicit-arrow-linebreak":0,
-    "comma-dangle":0
+    "comma-dangle":0,
+    "no-console":"error"
 
   },
   "globals": {
